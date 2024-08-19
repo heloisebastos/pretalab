@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 
-const filmes = [] //aplicação stateful x stateless
+const filmes = []
 
 const getFilmes = router.get('/filmes', (req, res) => {
     res.status(200).json(filmes)
