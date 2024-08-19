@@ -34,7 +34,7 @@ Os passos necessários para testar localmente são:
   ```plaintext
     npm i start
    ```
-- Testar as rotas da API e json com as requisições
+- Testar as rotas da API e JSON com as requisições
 
 ### Rotas da API Filmes (/filmes)
 
