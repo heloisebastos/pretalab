@@ -2,14 +2,14 @@
 
 ## Descrição
 
-Projeto API Filmes do Aprofunda PretaLab , realizado pela [Olabi](https://www.olabi.org.br/) em parceria com a [Disney](https://www.disney.com.br/), formação técnica em Back-End. O projeto é uma a API de filmes.
+O projeto API Filmes é uma aplicação desenvolvida em JavaScript utilizando Node.js e Express para gerenciar uma API simples de filmes. Esta API permite realizar operações básicas criar e ler em um conjunto de dados de filmes armazenados temporariamente na memória da aplicação.
 
 <img src="/APIFILMES.gif" alt="APIFILMES">
 
-## Ferramentas
+## Tecnologias, Framework e Ferramentas
 
 - [JavaScript](https://www.javascript.com/)
-- [Nodo.js](https://nodejs.org/en)
+- [Node.js](https://nodejs.org/en)
 - [Express](https://expressjs.com/)
 - [Insomnia](https://insomnia.rest/download)
 - [IDE VSCODE](https://code.visualstudio.com/download)
@@ -31,7 +31,7 @@ Projeto API Filmes do Aprofunda PretaLab , realizado pela [Olabi](https://www.ol
 ```json
 {
 
-"name" : "Estrela Além do Tempo",
+"title" : "Estrela Além do Tempo",
 "description": "é um filme baseado em fatos reais que narra a história de três brilhantes matemáticas afro-americanas na Nasa durante a década de 1960",
 "status" : true
 
