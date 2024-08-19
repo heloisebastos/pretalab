@@ -19,14 +19,14 @@ const getFilmes = router.get('/filmes', (req, res) => {
 const createFilmes = router.post('/filmes/create', (req, res) => {
     const filme = {
         id: uuidv4(),
-        name: req.body.name,
+        title: req.body.title,
         description: req.body.description,
         status: req.body.status
     }
 
     filmes.push(filme)
 
-    res.status(201).json({ message: `Filme ${filme.name} criado com sucesso!` })
+    res.status(201).json({ message: `Filme ${filme.title} criado com sucesso!` })
 })
 
 app.use(createFilmes)
