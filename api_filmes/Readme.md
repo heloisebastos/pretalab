@@ -4,7 +4,7 @@
 
 Projeto API Filmes do Aprofunda PretaLab , realizado pela [Olabi](https://www.olabi.org.br/) em parceria com a [Disney](https://www.disney.com.br/), formação técnica em Back-End. O projeto é uma a API de filmes.
 
-<img src="/APIFILMES.gif">
+<img src="/APIFILMES.gif" alt="APIFILMES">
 
 ## Ferramentas
 
