@@ -9,8 +9,10 @@ Projeto API Filmes do Aprofunda PretaLab , realizado pela [Olabi](https://www.ol
 ## Ferramentas
 
 - [JavaScript](https://www.javascript.com/)
+- [Nodo.js](https://nodejs.org/en)
+- [Express](https://expressjs.com/)
 - [Insomnia](https://insomnia.rest/download)
-- [IDE](https://code.visualstudio.com/download)
+- [IDE VSCODE](https://code.visualstudio.com/download)
 
 ### Rotas da API Filmes (/filmes)
 
