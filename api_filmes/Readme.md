@@ -21,19 +21,20 @@ Os passos necessários para testar localmente são:
 - Instalar as ferramentas necessárias
 - Clonar o projeto
 - Executar o seguintes comandos na raiz do diretório
+
   instala pacotes do framework Express e do Nodemon para reiniciar automaticamente o servidor.
   ```plaintext
     npm i express nodemon
    ```
-  instala o Cors pacote que gerencia permissões de acesso ao recurso do servidor
+  instala o Cors pacote que gerencia permissões de acesso ao recurso do servidor.
   ```plaintext
     npm i cors
    ```
-  Executa o script start definido no seu package.json, utilizado para iniciar o servidor 
+  Executa o script start definido no package.json, utilizado para iniciar o servidor. 
   ```plaintext
     npm i start
    ```
-- Testar as rotas da API e json com requisições
+- Testar as rotas da API e json com as requisições
 
 ### Rotas da API Filmes (/filmes)
 
