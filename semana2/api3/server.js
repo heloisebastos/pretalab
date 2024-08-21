@@ -40,6 +40,47 @@ routerDisciplinas.post('/disciplinas', (req, res) => {
 
 })
 
+routerDisciplinas.put('/disciplinas/:id', (req, res) => {
+    const encontraDisciplina = list_Disciplinas.find(item => item.id === req.params.id)
+    //    let encontraDisciplina = list_Disciplinas.find(item => item.id === req.params.id)
+
+    if (!encontraDisciplina) {
+        res.status(404).json({ message: 'Item não encontrado' })
+    }
+
+    encontraDisciplina.titulo = req.body.titulo
+    encontraDisciplina.modulo = req.body.modulo
+
+    res.json({ message: `Disciplina ${req.body.titulo} alterada com sucesso` })
+
+})
+
+routerDisciplinas.patch('/disciplina/:id', (req, res) => {
+    const { titulo, modulo } = req.body
+
+    let encontraDisciplina = list_Disciplinas.find(item => item.id === req.params.id)
+
+    if (!encontraDisciplina) {
+        res.status(404).json({ message: 'Item não encontrado' })
+    }
+
+    if (titulo != null) {
+        encontraDisciplina.titulo = titulo
+
+    }
+
+    if (modulo != null) {
+        encontraDisciplina.titulo = modulo
+
+    }
+    //encontraDisciplina.titulo = titulo
+    //encontraDisciplina.modulo = modulo
+
+
+    res.json({ message: `Disciplina ${req.body.titulo} alterada com sucesso` })
+
+})
+
 routerDisciplinas.delete('/disciplinas/:id', (req, res) => {
     const listAtualizada = list_Disciplinas.filter(item => item.id != req.params.id)
     res.json(listAtualizada)
