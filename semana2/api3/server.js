@@ -12,13 +12,7 @@ app.use(cors())
 
 const list_Disciplinas = []
 
-// const disciplinas = {
-//     id: 1,
-//     nome: 'api',
-//     modulo: 'semana 1'
-// }
 
-//const getDisciplina =
 routerDisciplinas.get('/disciplinas', (req, res) => {
     res.json(list_Disciplinas)
 })
@@ -42,7 +36,6 @@ routerDisciplinas.post('/disciplinas', (req, res) => {
 
 routerDisciplinas.put('/disciplinas/:id', (req, res) => {
     const encontraDisciplina = list_Disciplinas.find(item => item.id === req.params.id)
-    //    let encontraDisciplina = list_Disciplinas.find(item => item.id === req.params.id)
 
     if (!encontraDisciplina) {
         res.status(404).json({ message: 'Item não encontrado' })
@@ -73,8 +66,6 @@ routerDisciplinas.patch('/disciplina/:id', (req, res) => {
         encontraDisciplina.titulo = modulo
 
     }
-    //encontraDisciplina.titulo = titulo
-    //encontraDisciplina.modulo = modulo
 
 
     res.json({ message: `Disciplina ${req.body.titulo} alterada com sucesso` })
