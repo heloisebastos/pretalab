@@ -41,6 +41,27 @@ linkedinRouter.get('/linkedin/post', (req, res) => {
     res.json(postFound);
 });
 
+linkedinRouter.patch('/linkedin/:id', (req, res) => {
+    const { id } = req.params
+    const { content, format } = req.body
+
+    const postsFound = postsList.find(post => post.id === id)
+
+    if (!postsFound) {
+        return res.status(404).json({ message: `Post com o ${id} não encontrado` })
+    }
+
+    if (content != null) {
+        postsFound.content = content
+    }
+
+    if (format != null) {
+        postsFound.format = format
+    }
+
+    res.json({ message: `Post com o ${id} editado com sucesso` })
+})
+
 
 linkedinRouter.delete('/linkedin/:id', (req, res) => {
     const { id } = req.params
