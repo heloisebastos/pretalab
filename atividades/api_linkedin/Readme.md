@@ -1,8 +1,8 @@
-# API de Filmes
+# API Linkedin
 
 ## Descrição
 
-O projeto API Post Linkedin é uma aplicação desenvolvida em JavaScript utilizando Node.js e Express. Esta API permite realizar operações básicas criar, editar e buscar um conjunto de posts armazenados temporariamente na memória da aplicação.
+O projeto API Posts no Linkedin é uma aplicação desenvolvida em JavaScript utilizando Node.js e Express. Esta API permite realizar operações básicas criar, editar e buscar um conjunto de posts armazenados temporariamente na memória da aplicação.
 
 ## Tecnologias, Framework e Ferramentas
 
@@ -38,13 +38,18 @@ Os passos necessários para testar localmente são:
 
 | Método | Rota                                | Função                                            |
 | ------ | ----------------------------------- | ------------------------------------------------- |
-| POST   | /linkedin/                     | Operação de cadastro de novo fime                 |
-| GET    | /linkedin/post                             | Operação buscar todos os filmes cadastrados       |
+| POST   | /linkedin/post                          | Operação de cadastro de novo post                 |
+| GET    | /linkedin/posts                      | Operação buscar todos os posts cadastrados       |
+| GET    | /linkedin/post/?id=                      | Operação buscar o post por id        |
+| PATCH    | /linkedin/                     | Operação editar o post por id        |
+| DELETE    | /linkedin/                     | Operação deletar o post por id        |
+
+
 
 
 #### [POST] linkedin/post
 
-- **Descrição**: Operação de cadastro de novo post. Requer o envio dos dados do post pelo body.
+- **Descrição**: Operação de cadastro de um novo post. Requer o envio dos dados do post pelo body.
 
 - **Exemplo de body**:
 
@@ -60,7 +65,7 @@ Os passos necessários para testar localmente são:
 
 #### [GET] /linkedin/posts
 
-- **Descrição**: Operação busca de todos os posts cadastrados
+- **Descrição**: Operação  para buscar de todos os posts cadastrados
 
 ```plaintext
   localhost:3333/linkedin/posts
@@ -69,7 +74,7 @@ Os passos necessários para testar localmente são:
 
 #### [GET] /linkedin/post/?d=
 
-- **Descrição**: Operação busca post por id cadastrados
+- **Descrição**: Operação para buscar post por id 
 
 ```plaintext
   localhost:3333/linkedin/post/?id=
