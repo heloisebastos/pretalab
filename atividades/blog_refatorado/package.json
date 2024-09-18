@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "api4": "file:",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "nodemon": "^3.1.4",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.5",
     "slug": "^9.1.0",
     "uuid": "^10.0.0"
   }
