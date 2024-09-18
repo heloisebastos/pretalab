@@ -11,7 +11,7 @@
   "dependencies": {
     "api3": "file:",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "express": "^4.21.0",
+    "nodemon": "^3.1.5"
   }
 }
