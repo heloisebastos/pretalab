@@ -1,7 +1,6 @@
 {
-  "name": "pretalab_aprofunda",
+  "name": "exemplo1",
   "version": "1.0.0",
-  "description": "repositório destinado a atividades do projeto pretalab",
   "main": "index.js",
   "scripts": {
     "start": "ts-node-dev --respawn src/index.ts",
@@ -10,18 +9,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "@types/express": "^4.17.21",
-    "@types/jest": "^29.5.12",
-    "@types/node": "^22.5.4",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.5.5",
     "@types/supertest": "^6.0.2",
-    "express": "^4.19.2",
+    "exemplo1": "file:",
+    "express": "^4.21.0",
     "jest": "^29.7.0",
-    "node": "^22.8.0",
-    "pretalab_aprofunda": "file:",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.5",
-    "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.2"
   }

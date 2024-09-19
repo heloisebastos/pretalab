@@ -2,5 +2,7 @@ import { IdGenerator } from '../../application/repositories/id-generator-interfa
 import { v4 as uuid } from 'uuid';
 
 export class IdentifierGenerator implements IdGenerator {
-  //seu codigo aqui
+  generate(): string {
+    return uuid();
+  }
 }

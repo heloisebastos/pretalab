@@ -25,5 +25,24 @@ interface BookDTO {
 }
 
 export class BookController {
-  //seu codigo aqui
+  constructor(
+    private createBookUseCase: CreateBookUseCase,
+    private listAllBookUseCase: ListAllBooksUseCase
+  ) { }
+
+  async create(req: Request, res: Response): Promise<void> {
+    try {
+      const bookData: CreateBookDTO = req.body;
+      const book = this.createBookUseCase.execute(bookData);
+      res.status(201).json(book);
+    } catch (error) {
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
+  }
+
+
+  listAll(req: Request, res: Response) {
+    const books = this.listAllBookUseCase.execute();
+    res.json(books)
+  }
 }
