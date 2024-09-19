@@ -121,4 +121,8 @@ localhost:3333 /text/:id
         └──📄Text.js
     └──📂utils
         └──📄textStoragy.js
+└──📄 index.js
+└──📄 package-lock.json
+└──📄 package.json
+└──📄 .gitigonore
 ```
