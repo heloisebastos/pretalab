@@ -1,5 +1,5 @@
-const dbConnection1 = require['./singleton']
-const dbConnection2 = require['./singleton']
+const dbConnection1 = require('./singleton')
+const dbConnection2 = require('./singleton')
 
 console.log(dbConnection1.getConnection())
 console.log(dbConnection2.getConnection())
