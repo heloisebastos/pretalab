@@ -1,4 +1,4 @@
-# API Linkedin
+# API Blog 
 
 ## Descrição
 
@@ -14,7 +14,7 @@ O projeto adota uma estrutura modular para facilitar a manutenção e escalabili
 - [Insomnia](https://insomnia.rest/download)
 - [IDE VSCODE](https://code.visualstudio.com/download)
 
-### Testando a API Posts no Linkedin
+### Testando a API Blog
 
 Os passos necessários para testar localmente são:
 
