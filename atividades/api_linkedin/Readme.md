@@ -102,7 +102,7 @@ localhost:3333/linkedin/
 ## Estrutura do projeto
 
 ```plaintext
-📂api_filmes
+📂api_linkedin
 └──📂 node_modules
 └──📂 imagens_insomnia
 └──📄  server.js
