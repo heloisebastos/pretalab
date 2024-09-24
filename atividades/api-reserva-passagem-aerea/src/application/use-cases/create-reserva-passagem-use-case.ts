@@ -3,21 +3,18 @@ import { ReservaPassagemRepository } from '../repositories/reserva-passagem-repo
 import { IdGenerator } from '../repositories/id-generation-interface'
 
 interface Params {
-    //idReserva: string;
     status: boolean;
     preco: number;
     nomeUsuario: string;
-    //idUsuario: string;
     cpf: string;
     origemVoo: string;
     destinoVoo: string;
     dataVoo: Date;
-    //dataEmissaoPassagem: string;
     horarioPartida: string;
 
 }
 
-export class CreateReservaPassagem {
+export class CreateReservaPassagemUseCase {
     constructor(
         private reservaPassagemRepository: ReservaPassagemRepository,
         private idGenerator: IdGenerator
