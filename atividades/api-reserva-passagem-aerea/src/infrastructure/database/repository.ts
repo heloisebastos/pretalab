@@ -30,9 +30,14 @@ export class Repository implements ReservaPassagemRepository {
 
       return updatedReservaPassagem;
     }
-
     return null;
   }
 
-}
 
+  delete(id: string): ReservaPassagem[] {
+    const filteredReservaPassagem = this.reservasPassagens.filter(buscaReservaPassagem => buscaReservaPassagem.idReserva !== id)
+    return filteredReservaPassagem
+  }
+
+
+}

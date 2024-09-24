@@ -2,7 +2,6 @@ import { ReservaPassagem } from "../../domain/reserva-passagem";
 import { ReservaPassagemRepository } from "../repositories/reserva-passagem-repository";
 
 export class ListAllReservaPassagemUseCase {
-
     constructor(
         private reservaRepository: ReservaPassagemRepository
     ) { }

@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { CreateReservaPassagemUseCase } from '../application/use-cases/create-reserva-passagem-use-case';
 import { ListAllReservaPassagemUseCase } from '../application/use-cases/list-all-books-use-case';
 import { UpdateReservaPassagemUseCase } from '../application/use-cases/update-reserva-passagem-use-case';
+import { DeleteReservaPassagemUseCase } from '../application/use-cases/delete-reserva-passagem-use-case';
 export interface CreateReservaDTO {
   status: boolean;
   preco: number;
@@ -31,7 +32,8 @@ export class ReservaPassagemController {
   constructor(
     private createReservaPassagem: CreateReservaPassagemUseCase,
     private listAllReservaPassagem: ListAllReservaPassagemUseCase,
-    private updateReservaPassagem: UpdateReservaPassagemUseCase
+    private updateReservaPassagem: UpdateReservaPassagemUseCase,
+    private deleteReservaPassagem: DeleteReservaPassagemUseCase,
   ) { }
 
   async create(req: Request, res: Response): Promise<void> {
@@ -60,6 +62,13 @@ export class ReservaPassagemController {
 
 
   }
+
+  delete(req: Request, res: Response) {
+    const { id } = req.params;
+    const booksFiltered = this.deleteReservaPassagem.execute(id);
+    res.json({ message: `Livro com ${id} deletado com sucesso`, booksFiltered });
+  }
+
 
 }
 

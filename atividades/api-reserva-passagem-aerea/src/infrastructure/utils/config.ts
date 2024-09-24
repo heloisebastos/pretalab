@@ -4,6 +4,7 @@ import { IdentifierGenerator } from "./id-gerenator";
 import { ReservaPassagemController } from "../../interface/reserva-passagem-controller";
 import { ListAllReservaPassagemUseCase } from "../../application/use-cases/list-all-books-use-case";
 import { UpdateReservaPassagemUseCase } from "../../application/use-cases/update-reserva-passagem-use-case";
+import { DeleteReservaPassagemUseCase } from "../../application/use-cases/delete-reserva-passagem-use-case";
 
 export function configureDependencies() {
 
@@ -13,7 +14,8 @@ export function configureDependencies() {
     const createReservaPassagemUseCase = new CreateReservaPassagemUseCase(reservaPassagemRepository, idGenerator);
     const listAllReservaPassagem = new ListAllReservaPassagemUseCase(reservaPassagemRepository);
     const updateReservaPassagem = new UpdateReservaPassagemUseCase(reservaPassagemRepository);
-    const reservaPassagemController = new ReservaPassagemController(createReservaPassagemUseCase, listAllReservaPassagem, updateReservaPassagem);
+    const deleteReservaPassagem = new DeleteReservaPassagemUseCase(reservaPassagemRepository);
+    const reservaPassagemController = new ReservaPassagemController(createReservaPassagemUseCase, listAllReservaPassagem, updateReservaPassagem, deleteReservaPassagem);
 
     return {
         reservaPassagemController
