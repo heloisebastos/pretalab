@@ -2,15 +2,12 @@
 
 ## Descrição
 
-A API Reserva de Passagem Aérea é uma aplicação desenvolvida em JavaScript utilizando Node.js e Express. Esta API permite realizar operações básicas, como criar, editar e buscar reserva de passagem, com os dados sendo armazenados temporariamente na memória da aplicação.
+A API Reserva de Passagem Aérea é uma aplicação desenvolvida em TypeScript utilizando Node.js e Express. Esta API permite realizar operações básicas, como criar, editar e buscar reserva de passagem, com os dados sendo armazenados temporariamente na memória da aplicação.
 
 O projeto adota uma estrutura modular para facilitar a manutenção e escalabilidade, garantindo que cada parte da aplicação seja organizada em camadas separadas, como interface, application, infrastructure e domain. Essa abordagem melhora a legibilidade do código e permite a expansão eficiente da aplicação. Utilizamos a arquitetura Clean, aplicando o padrão Factory e o padrão Singleton para gerenciar a criação e instância de objetos. Além disso, o projeto segue os princípios da Programação Orientada a Objetos (POO) e implementa DDD (Domain-Driven Design) para garantir que a lógica de negócio esteja centralizada e bem estruturada. Também aplicamos os princípios SOLID para assegurar que o código seja flexível, reutilizável e de fácil manutenção.
 
-
-
 ## Tecnologias, Framework e Ferramentas
 
-- [JavaScript](https://www.javascript.com/)
 - [Node.js](https://nodejs.org/en)
 - [Express](https://expressjs.com/)
 - [Insomnia](https://insomnia.rest/download)
