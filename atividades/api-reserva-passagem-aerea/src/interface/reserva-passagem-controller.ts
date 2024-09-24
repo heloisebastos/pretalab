@@ -66,7 +66,7 @@ export class ReservaPassagemController {
   delete(req: Request, res: Response) {
     const { id } = req.params;
     const booksFiltered = this.deleteReservaPassagem.execute(id);
-    res.json({ message: `Livro com ${id} deletado com sucesso`, booksFiltered });
+    res.json({ message: `Reserva com ${id} deletado com sucesso`, booksFiltered });
   }
 
 
