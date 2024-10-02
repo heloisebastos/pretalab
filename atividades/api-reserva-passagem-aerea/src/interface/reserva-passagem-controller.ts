@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { CreateReservaPassagemUseCase } from '../application/use-cases/create-reserva-passagem-use-case';
-import { ListAllReservaPassagemUseCase } from '../application/use-cases/list-all-books-use-case';
+import { ListAllReservaPassagemUseCase } from '../application/use-cases/list-all-reversa-passagem-use-case';
 import { UpdateReservaPassagemUseCase } from '../application/use-cases/update-reserva-passagem-use-case';
 import { DeleteReservaPassagemUseCase } from '../application/use-cases/delete-reserva-passagem-use-case';
 export interface CreateReservaDTO {

@@ -116,7 +116,7 @@ localhost:3333/delete-reserva-passagem/:id
          └──📂use-cases
             └──📄create-reserva-passagem-use-case.ts
             └──📄delete-reserva-passagem-use-case.ts
-            └──📄list-all-books-use-case.ts
+            └──📄list-all-reserva-passagem-use-case.ts
             └──📄update-reserva-passagem-use-case.ts
     └──📂domain
         └──📄reserva-passagem.ts
