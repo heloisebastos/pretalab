@@ -14,19 +14,16 @@ class ShoppingCart {
   }
 
   removeProduct = (productId) => {
-    this.productId = this.products.filter(p => p.id !== productId.id)
-    return this.productId 
+    this.products = this.products.filter(product => product.id !== productId);
+    return this.products;
+  }
+  
+
+getTotalPrice() {
+    return this.products.reduce((total, product) => total + product.price, 0);
   }
 
 
-  someValueProduct = (productId) => {
-
-    //  Retorne o valor total dos produtos no carrinho
-
-  }
-
-
-  //Refatore o código e crie novos cenários de testes se necessário */
 
 
   
