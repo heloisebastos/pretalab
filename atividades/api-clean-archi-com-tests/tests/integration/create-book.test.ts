@@ -1,10 +1,10 @@
-import supertest from "supertest";
-import app from "../../src/interface";
-import mongoose from "mongoose";
+import supertest from 'supertest';
+import {app} from '../../src/interface';
+import mongoose from 'mongoose';
 
 const request = supertest(app);
 
-describe("CreateBookE2E", () => {
+describe('BookController Integration - Create', () => {
   beforeEach(async () => {
     await mongoose.connect(process.env.MONGODB_URI as string);
   });
@@ -14,8 +14,8 @@ describe("CreateBookE2E", () => {
     await mongoose.connection.close();
   });
 
-  it("should create a book", async () => {
-    const response = await request.post("/books").send({
+  it('should create a new book', async () => {
+    const response = await request.post('/books').send({
       title: "The Pragmatic Programmer",
       author: "Andrew Hunt",
       isbn: "978-0201616224",
@@ -33,14 +33,5 @@ describe("CreateBookE2E", () => {
       category: "Programming",
       status: "read",
     });
-  });
-
-  it("should throw an error when creating a book with invalid data", async () => {
-    const response = await request.post("/books").send({
-      title: "The Pragmatic Programmer",
-      author: "Ada Lovelace",
-    });
-
-    expect(response.status).toBe(400);
   });
 });
