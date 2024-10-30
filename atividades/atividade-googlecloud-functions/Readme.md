@@ -11,7 +11,7 @@ Este projeto tem como objetivo provisionar uma infraestrutura no Google Cloud Pl
 - [**Google Cloud** ](https://cloud.google.com/)
 - [**Google Cloud Fuction**](https://cloud.google.com/blog/products/serverless/google-cloud-functions-is-now-cloud-run-functions)
 - [**Terraform**](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
-
+- [**Python**](https://www.python.org/downloads/release/python-3124/)
 
 ## Estrutura do Projeto
 
