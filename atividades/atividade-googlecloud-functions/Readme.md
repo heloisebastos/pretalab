@@ -101,5 +101,5 @@ Essa estrutura foi implementado com objetivo de estudar o deploy e o gerenciamen
 ![resultados](imagens/imagem%20de%20monitoramento.png)
 
 
-
-
+Imagem da VM criada 
+![vm](imagens/img-vm-criada.png)
